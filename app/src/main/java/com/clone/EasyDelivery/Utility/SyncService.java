@@ -1,5 +1,7 @@
 package com.clone.EasyDelivery.Utility;
 
+import com.clone.EasyDelivery.BuildConfig;
+
 import android.app.IntentService;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -725,7 +727,7 @@ public class SyncService extends IntentService {
 
             // Email setup
             final String username = "dev@easydelivery.biz";
-            final String password = "nnmg ywbr fyud epwo";
+            final String password = BuildConfig.EMAIL_APP_PASSWORD;
 
             Properties properties = new Properties();
             properties.put("mail.smtp.host", "smtp.gmail.com");
